@@ -1,0 +1,255 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    scroll-behavior: smooth; 
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #ff5a00;
+    color: #fff;
+    z-index: 1000;
+  }
+  
+  header .logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  header .logo img {
+    width: 50px;
+    margin-right: 0.5rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+    font-weight: bold;
+  }
+  
+  
+  .banner {
+    text-align: center;
+    padding: 6rem 2rem 4rem;
+    background: url('img/banner.jpg') no-repeat center/cover;
+    color: #fff;
+  }
+  
+  .banner .btn-whatsapp {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background-color: #25d366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  
+  strong {
+    color: #ff5a00;
+  }
+  
+  
+  section {
+    padding: 4rem 2rem;
+    text-align: center;
+  }
+  
+  section img {
+    max-width: 100%;
+    margin-top: 1rem;
+    border-radius: 10px;
+  }
+  
+  
+  .carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto;
+    overflow: hidden;
+  }
+  
+  .carousel-track {
+    display: flex;
+    transition: transform 0.5s ease;
+  }
+  
+  .produto-card {
+    min-width: 100%;
+    background-color: #ffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+   
+  }
+  
+  .carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .carousel .prev {
+    left: 10px;
+  }
+  
+  .carousel .next {
+    right: 10px;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 2rem;
+    background-color: #333;
+    color: #fff;
+  }
+
+  .btn-whatsapp {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.8rem 2rem;
+    background-color: #25d366;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-whatsapp:hover {
+    background-color: #1ebe5d;
+}
+
+.empresa-carousel {
+    position: relative;
+    max-width: 800px;
+    margin: 2rem auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  }
+  
+  .carousel-slide {
+    width: 100%;
+    display: none;
+  }
+  
+  .carousel-slide.active {
+    display: block;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  
+  .carousel-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    pointer-events: none; 
+  }
+  
+  
+  .empresa-carousel button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: 50%;
+  }
+  
+  .empresa-carousel .prev {
+    left: 10px;
+  }
+  
+  .empresa-carousel .next {
+    right: 10px;
+  }
+
+/* --- Responsividade --- */
+
+
+@media (max-width: 768px) {
+ 
+  header {
+    flex-direction: column;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  header .logo {
+    margin-bottom: 0.5rem;
+  }
+
+  nav a {
+    margin: 0 0.5rem;
+  }
+
+  
+  .banner {
+    padding: 4rem 1rem 3rem;
+  }
+
+  .banner h2 {
+    font-size: 1.8rem;
+  }
+
+  
+  section {
+    padding: 2rem 1rem;
+  }
+
+  .empresa-carousel .carousel-logo {
+    width: 120px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  
+  .banner h2 {
+    font-size: 1.5rem;
+  }
+
+  .banner p {
+    font-size: 0.9rem;
+  }
+
+  .btn-whatsapp {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+  
